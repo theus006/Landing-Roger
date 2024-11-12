@@ -124,7 +124,7 @@ header li a {
     justify-content: space-between;
     align-items: center;
     flex-basis: 900px;
-
+    
 }
 
 .cuidarDeSi article {
@@ -177,26 +177,53 @@ header li a {
 /*estilizando a parte de serviços*/
 .servicos {
     background: linear-gradient(90deg, #084D6E 5.5%, #1279AB 100%);
-    height: 500px;
+    height: 420px;
     width: 100vw;
     color: white;
     font-family: "Inter", sans-serif;
     font-weight: 600;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .servicos .conteudo3 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    flex-basis: 900px;
+    flex-basis: 1100px;
+    height: 400px;
+
+}
+
+.servicos .conteudo3 figure img {
     height: 300px;
-    border: 1px solid black;
+    width: auto;
+}
+
+.servicos .conteudo3 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .servicos .conteudo3 article {
+    align-self: flex-start;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 350px;
+}
+
+.servicos .conteudo3 article p {
+    width: 550px;
+}
+
+.servicos .conteudo3 article p:nth-child(3) {
     text-align: center;
+    font-family: "Jaini Purva", system-ui;
+    font-size: 1.5rem;
 }
 
 .servicos .conteudo3 article h2 {
@@ -206,12 +233,54 @@ header li a {
     margin-bottom: 20px;
 }
 
-.servicos .conteudo3 article ul {
-    margin-bottom: 30px;
+/*personalizando a parte dos depoimentos*/
+.depoimentos {
+    background: linear-gradient(90deg, #084D6E 5.5%, #1279AB 100%);
+    height: 620px;
+    width: 100vw;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.depoimentos .conteudo4 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 1400px;
+    height: 500px;
+}
+
+.depoimentos .conteudo4 .box img {
+    height: 240px;
+    width: auto;
+}
+
+.depoimentos .conteudo4 .box {
+    height: 480px;
+}
+
+.depoimentos .conteudo4 .box figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.depoimentos .conteudo4 .box p {
+    width: 250px;
+    text-align: center;
+}
+
+.depoimentos .conteudo4 .box p:nth-child(2) {
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 600px) {
-
     /*media do cabeçalho*/
     header {
         flex-direction: column;
