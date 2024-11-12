@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Estilização do cabeçalho*/
+header {
+    font-family: "Jaini Purva", system-ui;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #084D6E 5.5%, #1279AB 100%);
+    height: 15vh;
+    width: 100vw;
+    border-bottom: 1px solid #514F4F;
+    box-sizing: border-box;
+}
+
+header figure {
+    margin-left: 5%;
+    margin-top: 20px;
+}
+
+header nav {
+    margin-right: 5%;
+    width: 50vw;
+    height: auto;
+    min-width: 550px;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #514F4F;
+    border-radius: 20px;
+    font-size: 2rem;
+    padding: 5px;
+
+}
+
+/*Estilização do corpo*/
+/*Estilização do sobre*/
+.sobre {
+    background: linear-gradient(90deg, #084D6E 5.5%, #1279AB 100%);
+    color: white;
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.sobre .conteudo {
+    flex-basis: 900px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.sobre article {
+    width: 500px;
+    height: 300px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.sobre article h2 {
+    font-family: "Jaini Purva", system-ui;
+    font-size: 2rem;
+    margin-bottom: 60px;
+}
+
+.sobre article p {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+
+
+.conteudo figure {
+    display: flex;
+}
+
+/*Estilização da seção da frase de efeito*/
+.fraseEfeito {
+    width: 100vw;
+    height: 80px;
+    background-color: #525252;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fraseEfeito p {
+    font-family: "Jaini Purva", system-ui;
+    font-size: 2rem;
+    color: white;
+
+}
+
+/*estilizando a parte "cuidar de sí"*/
+
+.cuidarDeSi {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    box-sizing: border-box;
+    width: 100vw;
+    padding-top: 20px;
+    background: linear-gradient(90deg, #084D6E 5.5%, #1279AB 100%);
+}
+
+.cuidarDeSi .conteudo2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 900px;
+
+}
+
+.cuidarDeSi article {
+    height: 350px;
+    flex-basis: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.cuidarDeSi article h2 {
+    font-family: "Jaini Purva", system-ui;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.cuidarDeSi article figure img {
+    width: 600px;
+    height: auto;
+
+}
+
+.cuidarDeSi article figcaption {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+    margin-left: -20px;
+}
+
+.cuidarDeSi article figcaption p {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    width: 180px;
+    box-sizing: border-box;
+
+}
+
+.cuidarDeSi .conteudo2 #roger2Figure #roger2 {
+    width: 200px;
+    height: 260px;
+    align-self: flex-end;
+    border-radius: 20px;
+}
+
+
+/*estilizando a parte de serviços*/
+.servicos {
+    background: linear-gradient(90deg, #084D6E 5.5%, #1279AB 100%);
+    height: 500px;
+    width: 100vw;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+.servicos .conteudo3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 900px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.servicos .conteudo3 article {
+    text-align: center;
+}
+
+.servicos .conteudo3 article h2 {
+    font-family: "Jaini Purva", system-ui;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.servicos .conteudo3 article ul {
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 600px) {
+
+    /*media do cabeçalho*/
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    header figure {
+        margin-left: 0;
+    }
+
+    header nav {
+        margin-right: 0;
+        height: 100px;
+        min-width: 380px;
+    }
+
+    header ul {
+        justify-content: space-around;
+    }
+
+    header li a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 1px solid #514F4F;
+        border-radius: 20px;
+        font-size: 1.3rem;
+        padding: 8px;
+
+    }
+}
